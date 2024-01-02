@@ -13,8 +13,18 @@ class Function() :
                 
         return x
     
-    def apply_range (self,R):
-        pass
+    def apply_range (self,R: list[tuple(int,int)]) -> list[tuple(int,int)]:
+        for (dst, src, sz) in self.tuples :
+                src_ed = src +sz
+        
+        NR =[]
+        while R :
+            (st,ed) = R.pop()
+            before = (st , min(ed ,src))
+            inter = (max(st , src) , min(src_ed , ed))
+            after = ( max(src_ed , st), ed )
+            if before[]
+
 
 
 if __name__ == "__main__":
